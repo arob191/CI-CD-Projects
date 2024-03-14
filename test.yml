@@ -1,7 +1,7 @@
 # This is a comment
 
 person:
-  name: John
+  name: &name John
   age: 29
   isMale: true
   stuff:
@@ -14,3 +14,4 @@ person:
       age: 25
     - name: Jack
       age: 30
+  self: *name
