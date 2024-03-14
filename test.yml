@@ -1,6 +1,13 @@
 # This is a comment
 
+
+base_person: &base
+  city: nyc
+  county: usa
+
+
 person:
+  <<: *base
   name: &name John
   age: 29
   isMale: true
